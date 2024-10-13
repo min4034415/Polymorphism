@@ -9,14 +9,14 @@
 import Foundation
 import SwiftData
 
-@Model
-final class Subject {
-    var timestamp: Date
-    var id: UUID
-    
-    init(timestamp: Date, id: UUID)
-    {
-        self.timestamp = timestamp
-        self.id = id
-    }
-}
+//@Model
+//final class Subject {
+//    var name: String
+//    var id: UUID
+//    
+//    init(name: String, id: UUID)
+//    {
+//        self.name = name
+//        self.id = id
+//    }
+//}

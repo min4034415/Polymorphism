@@ -11,9 +11,10 @@
 import Foundation
 import SwiftData
 import CoreLocation
+import SwiftUI
 
 @Model
-final class Log {
+final class Rogue {
     var id: UUID //고유 id
     var timestamp: Date // 시작 시간
     var latitude: Double // 위도
@@ -30,6 +31,16 @@ final class Log {
         }
     }
     var status: Status
+    var icon: Image {
+        switch status {
+        case .running:
+            Image(systemName: "pause.fill")
+        case .paused:
+            Image(systemName: "play.fill")
+        case .completed:
+            Image(systemName: "checkmark.rectangle.portrait")
+        }
+    }
     
 //    init(timestamp: Date, id: UUID, latitude: Double, longitude: Double)
 //    {
@@ -53,14 +64,16 @@ final class Log {
     }
     
     enum Status: Int, Codable, Identifiable, CaseIterable {
-    case inProgress, completed
+    case running, paused, completed
         var id: Self {
             self
         }
         var descr: String {
             switch self {
-            case .inProgress:
-                "In Progress"
+            case .running:
+                "Running"
+            case .paused:
+                "Paused"
             case .completed:
                 "Completed"
             }
@@ -68,3 +81,14 @@ final class Log {
     }
 }
 
+@Model
+final class Subject {
+    var name: String
+    var id: UUID
+    
+    init(name: String, id: UUID)
+    {
+        self.name = name
+        self.id = id
+    }
+}

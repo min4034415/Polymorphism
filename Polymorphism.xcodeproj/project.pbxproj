@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D63BF77A2CAB7C5600253205 /* Rogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BF7792CAB7C5600253205 /* Rogue.swift */; };
 		D67235242C9032A3007363A5 /* PolymorphismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67235232C9032A3007363A5 /* PolymorphismApp.swift */; };
 		D67235262C9032A3007363A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67235252C9032A3007363A5 /* ContentView.swift */; };
 		D67235282C9032A3007363A5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67235272C9032A3007363A5 /* Item.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D63BF7792CAB7C5600253205 /* Rogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rogue.swift; sourceTree = "<group>"; };
 		D67235202C9032A3007363A5 /* Polymorphism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polymorphism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67235232C9032A3007363A5 /* PolymorphismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolymorphismApp.swift; sourceTree = "<group>"; };
 		D67235252C9032A3007363A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				D67235272C9032A3007363A5 /* Item.swift */,
 				D6E01E362CA1385D0067EB90 /* Subject.swift */,
 				D6E01E382CA138650067EB90 /* Log.swift */,
+				D63BF7792CAB7C5600253205 /* Rogue.swift */,
 				D67235712C908711007363A5 /* Location.swift */,
 				D67235292C9032A4007363A5 /* Assets.xcassets */,
 				D672352B2C9032A4007363A5 /* Preview Content */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63BF77A2CAB7C5600253205 /* Rogue.swift in Sources */,
 				D67235262C9032A3007363A5 /* ContentView.swift in Sources */,
 				D6E01E392CA138650067EB90 /* Log.swift in Sources */,
 				D67235282C9032A3007363A5 /* Item.swift in Sources */,
