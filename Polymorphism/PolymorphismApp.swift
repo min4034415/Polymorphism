@@ -13,6 +13,7 @@ struct PolymorphismApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
+            RogueOne.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -26,7 +27,12 @@ struct PolymorphismApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            OptionalView()
         }
         .modelContainer(sharedModelContainer)
+    }
+    
+    init() {
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
     }
 }

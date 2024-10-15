@@ -15,6 +15,9 @@
 		D672352D2C9032A4007363A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D672352C2C9032A4007363A5 /* Preview Assets.xcassets */; };
 		D67235702C9086B5007363A5 /* YounHaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D672356F2C9086B5007363A5 /* YounHaView.swift */; };
 		D67235722C908711007363A5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67235712C908711007363A5 /* Location.swift */; };
+		D6ABE7F92CBC1A6D0080307F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE7F82CBC1A6D0080307F /* MapView.swift */; };
+		D6ABE8042CBD180C0080307F /* RogueOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE8032CBD180C0080307F /* RogueOne.swift */; };
+		D6ABE8082CBD4E850080307F /* OptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE8072CBD4E850080307F /* OptionalView.swift */; };
 		D6E01E372CA1385D0067EB90 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E01E362CA1385D0067EB90 /* Subject.swift */; };
 		D6E01E392CA138650067EB90 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E01E382CA138650067EB90 /* Log.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +32,9 @@
 		D672352C2C9032A4007363A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D672356F2C9086B5007363A5 /* YounHaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YounHaView.swift; sourceTree = "<group>"; };
 		D67235712C908711007363A5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D6ABE7F82CBC1A6D0080307F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D6ABE8032CBD180C0080307F /* RogueOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogueOne.swift; sourceTree = "<group>"; };
+		D6ABE8072CBD4E850080307F /* OptionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalView.swift; sourceTree = "<group>"; };
 		D6E01E362CA1385D0067EB90 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		D6E01E382CA138650067EB90 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,8 +74,11 @@
 				D672356F2C9086B5007363A5 /* YounHaView.swift */,
 				D67235272C9032A3007363A5 /* Item.swift */,
 				D6E01E362CA1385D0067EB90 /* Subject.swift */,
+				D6ABE7F82CBC1A6D0080307F /* MapView.swift */,
 				D6E01E382CA138650067EB90 /* Log.swift */,
 				D63BF7792CAB7C5600253205 /* Rogue.swift */,
+				D6ABE8032CBD180C0080307F /* RogueOne.swift */,
+				D6ABE8072CBD4E850080307F /* OptionalView.swift */,
 				D67235712C908711007363A5 /* Location.swift */,
 				D67235292C9032A4007363A5 /* Assets.xcassets */,
 				D672352B2C9032A4007363A5 /* Preview Content */,
@@ -156,13 +165,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63BF77A2CAB7C5600253205 /* Rogue.swift in Sources */,
+				D6ABE8042CBD180C0080307F /* RogueOne.swift in Sources */,
 				D67235262C9032A3007363A5 /* ContentView.swift in Sources */,
 				D6E01E392CA138650067EB90 /* Log.swift in Sources */,
 				D67235282C9032A3007363A5 /* Item.swift in Sources */,
 				D67235722C908711007363A5 /* Location.swift in Sources */,
 				D67235702C9086B5007363A5 /* YounHaView.swift in Sources */,
 				D6E01E372CA1385D0067EB90 /* Subject.swift in Sources */,
+				D6ABE7F92CBC1A6D0080307F /* MapView.swift in Sources */,
 				D67235242C9032A3007363A5 /* PolymorphismApp.swift in Sources */,
+				D6ABE8082CBD4E850080307F /* OptionalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +311,8 @@
 				DEVELOPMENT_TEAM = Q89MF97WT7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Helpme Please";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +342,8 @@
 				DEVELOPMENT_TEAM = Q89MF97WT7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Helpme Please";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
