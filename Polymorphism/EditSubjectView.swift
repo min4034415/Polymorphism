@@ -64,7 +64,7 @@ struct EditSubjectView: View {
 #Preview {
     let preview = Preview(Subject.self)
     return NavigationStack {
-        EditSubjectView(subject: Subject.sampleSubjects[3])
+        EditSubjectView(subject: Subject.sampleSubjects[2])
             .modelContainer(preview.container)
     }
 }

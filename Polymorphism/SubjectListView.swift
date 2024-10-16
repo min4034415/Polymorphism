@@ -34,9 +34,7 @@ struct SubjectListView: View {//이거 용도는
                 List {
                     ForEach(subjects) { subject in
                         NavigationLink {
-                            Text("Location at")
-                            
-//                            Text("Location at")
+                            EditSubjectView(subject: subject)
                         } label: {
                             Text("Lat: \(subject.name), Lon: \(subject.name)")
                                 .foregroundStyle(subject.hexColor)
@@ -76,7 +74,9 @@ struct SubjectListView: View {//이거 용도는
 //    preview.addExamples(books)
 //    books[1].genres?.append(genres[0])
 //    return SubjectView(book: books[1])
-    return SubjectListView()
+    return NavigationStack{
+        SubjectListView()
+    }
         .modelContainer(preview.container)
 }
 
