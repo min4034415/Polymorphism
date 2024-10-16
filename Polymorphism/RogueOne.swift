@@ -13,11 +13,18 @@ import SwiftUI
 
 @Model
 class RogueOne {
-    var id: UUID //고유 id
+    var id: UUID //고유 id 타이머 아이디
     var timestamp: Date = Date.now// 시작 시간
+    var allocated_time : Double? // 할당 시간
+    var elapsed_time : Double? // 소요 시간
     var latitude: Double? // 위도
     var longitude: Double? // 경도
-//    var subject: UUID // 이걸 어케해야하오
+    var end_time: Double? // 마감시간
+    var time_left: Double? // 잔여시간
+//    var subject_name: Double? // 과목이름
+    @Relationship(deleteRule: .cascade)
+    var subject: [Subject]?
+    //    var subject: UUID // 이걸 어케해야하오
     //이건 One to many 인가 아니면 many to one 인가
     var coordinate: CLLocationCoordinate2D? {
             get {
@@ -46,17 +53,40 @@ class RogueOne {
         }
     }
     
+//    init(
+//        id: UUID = UUID(),
+//        timestamp: Date = Date.now,
+//        latitude: Double? = nil,
+//        longitude: Double? = nil,
+//        status: Status = .running
+//    ) {
+//        self.id = id
+//        self.timestamp = timestamp
+//        self.latitude = latitude
+//        self.longitude = longitude
+//        self.status = status
+//    }
     init(
         id: UUID = UUID(),
         timestamp: Date = Date.now,
+        allocated_time: Double? = nil,
+        elapsed_time: Double? = nil,
         latitude: Double? = nil,
         longitude: Double? = nil,
-        status: Status = .running
+        end_time: Double? = nil,
+        time_left: Double? = nil,
+//        subject_name: Double? = nil,
+        status: Status = .notStarted
     ) {
         self.id = id
         self.timestamp = timestamp
+        self.allocated_time = allocated_time
+        self.elapsed_time = elapsed_time
         self.latitude = latitude
         self.longitude = longitude
+        self.end_time = end_time
+        self.time_left = time_left
+//        self.subject_name = subject_name
         self.status = status
     }
     
