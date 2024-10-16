@@ -17,36 +17,55 @@ struct SubjectListView: View {//이거 용도는
     @State private var newSubject = false
     
     var body: some View {
-        Group {
-            if subjects.isEmpty {
-                ContentUnavailableView{
-                    Image(systemName: "book.fill")
-                        .font(.largeTitle)
-                } description: {
-                    Text("No Subjects yet.")
-                } actions: {
-                    Button("Add Subject") {
-                        newSubject.toggle()
+        NavigationStack {
+            Group {
+                if subjects.isEmpty {
+                    ContentUnavailableView{
+                        Image(systemName: "book.fill")
+                            .font(.largeTitle)
+                    } description: {
+                        Text("No Subjects yet.")
+                    } actions: {
+                        Button("Add Subject") {
+                            newSubject.toggle()
+                        }
+                        .buttonStyle(.borderedProminent)
                     }
-                    .buttonStyle(.borderedProminent)
-                }
-            } else {
-                List {
-                    ForEach(subjects) { subject in
-                        NavigationLink {
-                            EditSubjectView(subject: subject)
+                } else {
+                    List {
+                        ForEach(subjects) { subject in
+                            NavigationLink {
+                                EditSubjectView(subject: subject)
+                            } label: {
+                                Text(subject.name)
+                                    .foregroundStyle(subject.hexColor)
+    //                                .font(.title)
+                                    .font(.largeTitle)
+                                    .fontDesign(.serif)
+                            }
+                        }
+                        .onDelete(perform: deleteSubjects)
+                        LabeledContent {
+                            Button{
+                                newSubject.toggle()
+                            } label: {
+                                Image(systemName: "plus.circle.fill")
+                                    .imageScale(.large)
+                            }
+                            .buttonStyle(.borderedProminent)
                         } label: {
-                            Text("Lat: \(subject.name), Lon: \(subject.name)")
-                                .foregroundStyle(subject.hexColor)
+                            Text("Create new Genre")
+                                .font(.largeTitle).foregroundStyle(.secondary)
                         }
                     }
-                    .onDelete(perform: deleteSubjects)
+                    .padding()
+                    .listStyle(.plain)
+    //                .listStyle(DefaultListStyle())
                 }
-//                .listStyle(.plain)
             }
-        }
-        .fullScreenCover(isPresented: $newSubject) {
-            NewSubjectView()
+            .fullScreenCover(isPresented: $newSubject) {
+                NewSubjectView()
+            }
         }
     }
 //    

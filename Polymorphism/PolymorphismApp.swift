@@ -13,7 +13,8 @@ struct PolymorphismApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
-            RogueOne.self
+            RogueOne.self,
+            Subject.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -26,10 +27,11 @@ struct PolymorphismApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-            OptionalView()
-            NewSubjectView()
-            SubjectListView()
+//            ContentView()
+//            OptionalView()
+//            NewSubjectView()
+                SubjectListView()
+//                    .modelContainer(for: [Subject.self])
         }
         .modelContainer(sharedModelContainer)
     }

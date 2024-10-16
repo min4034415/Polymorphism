@@ -16,6 +16,7 @@ struct EditSubjectView: View {
     @State private var name = ""
     @State private var color = Color.red
     @State private var dailyGoal = 0
+//    @State private var rogueOnes: [RogueOne] = nil
     
     var body: some View {
         NavigationStack {
