@@ -89,6 +89,7 @@
 				D672356F2C9086B5007363A5 /* YounHaView.swift */,
 				D6ABE7F82CBC1A6D0080307F /* MapView.swift */,
 				D6ABE8152CBF64450080307F /* NewSubjectView.swift */,
+				D6ABE8132CBEBEBE0080307F /* SubjectView.swift */,
 				D6ABE81A2CBF75C90080307F /* Models */,
 				D6ABE80C2CBEA2ED0080307F /* Extensions */,
 				D6ABE8072CBD4E850080307F /* OptionalView.swift */,
@@ -104,7 +105,6 @@
 				D672352C2C9032A4007363A5 /* Preview Assets.xcassets */,
 				D6ABE80F2CBEBD400080307F /* PreviewContainer.swift */,
 				D6ABE8112CBEBD680080307F /* SubjectSamples.swift */,
-				D6ABE8132CBEBEBE0080307F /* SubjectView.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";

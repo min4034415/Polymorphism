@@ -14,11 +14,19 @@ final class Subject {
     @Attribute(.unique)
     var name: String
     var color: String
+    var dailyGoal: Int
     var rogueones: [RogueOne]?
     
-    init(name: String, color: String) {
+    init(
+        name: String,
+        color: String,
+        dailyGoal: Int,
+        rogueones: [RogueOne]? = nil
+    ) {
         self.name = name
         self.color = color
+        self.dailyGoal = dailyGoal
+        self.rogueones = rogueones
     }
     
     var hexColor: Color {

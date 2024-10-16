@@ -14,16 +14,27 @@ struct SubjectView: View {//이거 용도는
     @Environment(\.modelContext) private var modelContext
     @Query private var subjects: [Subject]
 //    @Bindable var subject: Subject
+    @State private var newSubject = false
     
     var body: some View {
         Group {
             if subjects.isEmpty {
-                ContentUnavailableView("No Subjects yet.", systemImage: "book.fill")
+                ContentUnavailableView{
+                    Image(systemName: "book.fill")
+                        .font(.largeTitle)
+                } description: {
+                    Text("No Subjects yet.")
+                } actions: {
+                    Button("Add Subject") {
+                        newSubject.toggle()
+                    }
+                    .buttonStyle(.borderedProminent)
+                }
             } else {
                 List {
                     ForEach(subjects) { subject in
                         NavigationLink {
-                            Text("Location at \(subject.hexColor), \(subject.name)")
+                            Text("Location at")
                             
 //                            Text("Location at")
                         } label: {
@@ -35,6 +46,9 @@ struct SubjectView: View {//이거 용도는
                 }
 //                .listStyle(.plain)
             }
+        }
+        .fullScreenCover(isPresented: $newSubject) {
+            NewSubjectView()
         }
     }
 //    
