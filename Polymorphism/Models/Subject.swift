@@ -11,6 +11,7 @@ import SwiftData
 
 @Model
 final class Subject {
+    @Attribute(.unique)
     var name: String
     var color: String
     var rogueones: [RogueOne]?

@@ -28,6 +28,7 @@ struct PolymorphismApp: App {
         WindowGroup {
             ContentView()
             OptionalView()
+            NewSubjectView()
         }
         .modelContainer(sharedModelContainer)
     }

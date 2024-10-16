@@ -23,6 +23,8 @@
 		D6ABE8102CBEBD400080307F /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE80F2CBEBD400080307F /* PreviewContainer.swift */; };
 		D6ABE8122CBEBD680080307F /* SubjectSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE8112CBEBD680080307F /* SubjectSamples.swift */; };
 		D6ABE8142CBEBEBE0080307F /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE8132CBEBEBE0080307F /* SubjectView.swift */; };
+		D6ABE8162CBF64450080307F /* NewSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE8152CBF64450080307F /* NewSubjectView.swift */; };
+		D6ABE8182CBF757C0080307F /* TimerDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE8172CBF757C0080307F /* TimerDoneView.swift */; };
 		D6E01E372CA1385D0067EB90 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E01E362CA1385D0067EB90 /* Subject.swift */; };
 		D6E01E392CA138650067EB90 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E01E382CA138650067EB90 /* Log.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +47,8 @@
 		D6ABE80F2CBEBD400080307F /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		D6ABE8112CBEBD680080307F /* SubjectSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectSamples.swift; sourceTree = "<group>"; };
 		D6ABE8132CBEBEBE0080307F /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
+		D6ABE8152CBF64450080307F /* NewSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSubjectView.swift; sourceTree = "<group>"; };
+		D6ABE8172CBF757C0080307F /* TimerDoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDoneView.swift; sourceTree = "<group>"; };
 		D6E01E362CA1385D0067EB90 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		D6E01E382CA138650067EB90 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,17 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				D67235232C9032A3007363A5 /* PolymorphismApp.swift */,
+				D6ABE8172CBF757C0080307F /* TimerDoneView.swift */,
 				D67235252C9032A3007363A5 /* ContentView.swift */,
 				D672356F2C9086B5007363A5 /* YounHaView.swift */,
-				D67235272C9032A3007363A5 /* Item.swift */,
-				D6E01E362CA1385D0067EB90 /* Subject.swift */,
 				D6ABE7F82CBC1A6D0080307F /* MapView.swift */,
-				D6E01E382CA138650067EB90 /* Log.swift */,
+				D6ABE8152CBF64450080307F /* NewSubjectView.swift */,
+				D6ABE81A2CBF75C90080307F /* Models */,
 				D6ABE80C2CBEA2ED0080307F /* Extensions */,
-				D63BF7792CAB7C5600253205 /* Rogue.swift */,
-				D6ABE8032CBD180C0080307F /* RogueOne.swift */,
 				D6ABE8072CBD4E850080307F /* OptionalView.swift */,
-				D67235712C908711007363A5 /* Location.swift */,
 				D67235292C9032A4007363A5 /* Assets.xcassets */,
 				D672352B2C9032A4007363A5 /* Preview Content */,
 			);
@@ -115,6 +116,19 @@
 				D6ABE80B2CBEA2ED0080307F /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D6ABE81A2CBF75C90080307F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D67235272C9032A3007363A5 /* Item.swift */,
+				D6E01E362CA1385D0067EB90 /* Subject.swift */,
+				D6E01E382CA138650067EB90 /* Log.swift */,
+				D63BF7792CAB7C5600253205 /* Rogue.swift */,
+				D6ABE8032CBD180C0080307F /* RogueOne.swift */,
+				D67235712C908711007363A5 /* Location.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +202,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6ABE8122CBEBD680080307F /* SubjectSamples.swift in Sources */,
+				D6ABE8162CBF64450080307F /* NewSubjectView.swift in Sources */,
 				D63BF77A2CAB7C5600253205 /* Rogue.swift in Sources */,
 				D6ABE8042CBD180C0080307F /* RogueOne.swift in Sources */,
+				D6ABE8182CBF757C0080307F /* TimerDoneView.swift in Sources */,
 				D67235262C9032A3007363A5 /* ContentView.swift in Sources */,
 				D6E01E392CA138650067EB90 /* Log.swift in Sources */,
 				D67235282C9032A3007363A5 /* Item.swift in Sources */,

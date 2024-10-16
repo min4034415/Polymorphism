@@ -39,6 +39,7 @@ struct OptionalView: View {
                 }
                 .onDelete(perform: deleteLocations)
             }
+        
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
