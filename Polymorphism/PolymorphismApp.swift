@@ -29,7 +29,7 @@ struct PolymorphismApp: App {
             ContentView()
             OptionalView()
             NewSubjectView()
-            SubjectView()
+            SubjectListView()
         }
         .modelContainer(sharedModelContainer)
     }

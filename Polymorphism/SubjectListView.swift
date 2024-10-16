@@ -10,7 +10,7 @@
 import SwiftUI
 import SwiftData
 
-struct SubjectView: View {//이거 용도는
+struct SubjectListView: View {//이거 용도는
     @Environment(\.modelContext) private var modelContext
     @Query private var subjects: [Subject]
 //    @Bindable var subject: Subject
@@ -76,7 +76,7 @@ struct SubjectView: View {//이거 용도는
 //    preview.addExamples(books)
 //    books[1].genres?.append(genres[0])
 //    return SubjectView(book: books[1])
-    return SubjectView()
+    return SubjectListView()
         .modelContainer(preview.container)
 }
 
