@@ -12,7 +12,7 @@ struct EditSubjectView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var context
     let subject: Subject
-    
+    /**안녕하세요**/
     @State private var name = ""
     @State private var color = Color.red
     @State private var dailyGoal = 0
