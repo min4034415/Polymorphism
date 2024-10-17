@@ -28,7 +28,7 @@ struct PolymorphismApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-//            OptionalView()
+            OptionalView()
 //            NewSubjectView()
                 SubjectListView()
 //                    .modelContainer(for: [Subject.self])

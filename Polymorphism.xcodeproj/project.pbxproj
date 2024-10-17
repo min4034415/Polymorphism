@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D602D6152CC0A75800B6E3AB /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D602D6142CC0A75800B6E3AB /* SwipeView.swift */; };
 		D63BF77A2CAB7C5600253205 /* Rogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BF7792CAB7C5600253205 /* Rogue.swift */; };
 		D67235242C9032A3007363A5 /* PolymorphismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67235232C9032A3007363A5 /* PolymorphismApp.swift */; };
 		D67235262C9032A3007363A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67235252C9032A3007363A5 /* ContentView.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D602D6142CC0A75800B6E3AB /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		D63BF7792CAB7C5600253205 /* Rogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rogue.swift; sourceTree = "<group>"; };
 		D67235202C9032A3007363A5 /* Polymorphism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polymorphism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67235232C9032A3007363A5 /* PolymorphismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolymorphismApp.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				D69ACB9A2CBFCAE70025DD41 /* EditSubjectView.swift */,
 				D67235232C9032A3007363A5 /* PolymorphismApp.swift */,
 				D6ABE8172CBF757C0080307F /* TimerDoneView.swift */,
+				D602D6142CC0A75800B6E3AB /* SwipeView.swift */,
 				D67235252C9032A3007363A5 /* ContentView.swift */,
 				D672356F2C9086B5007363A5 /* YounHaView.swift */,
 				D6ABE7F82CBC1A6D0080307F /* MapView.swift */,
@@ -217,6 +220,7 @@
 				D69ACB9B2CBFCAE70025DD41 /* EditSubjectView.swift in Sources */,
 				D67235702C9086B5007363A5 /* YounHaView.swift in Sources */,
 				D6ABE80D2CBEA2ED0080307F /* Color+Extension.swift in Sources */,
+				D602D6152CC0A75800B6E3AB /* SwipeView.swift in Sources */,
 				D6E01E372CA1385D0067EB90 /* Subject.swift in Sources */,
 				D6ABE7F92CBC1A6D0080307F /* MapView.swift in Sources */,
 				D6ABE80E2CBEA2ED0080307F /* UIColor+Extension.swift in Sources */,
