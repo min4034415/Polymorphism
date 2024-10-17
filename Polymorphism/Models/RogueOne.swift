@@ -23,7 +23,8 @@ class RogueOne {
     var time_left: Double? // 잔여시간
 //    var subject_name: Double? // 과목이름
     @Relationship(deleteRule: .cascade)
-    var subject: [Subject]?
+//    var subject: [Subject]?
+    var subject: Subject?
     //    var subject: UUID // 이걸 어케해야하오
     //이건 One to many 인가 아니면 many to one 인가
     var coordinate: CLLocationCoordinate2D? {
