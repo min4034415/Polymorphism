@@ -28,10 +28,11 @@ struct PolymorphismApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            OptionalView()
+//            OptionalView()
 //            NewSubjectView()
-                SubjectListView()
+//                SubjectListView()
 //                    .modelContainer(for: [Subject.self])
+            SwipeView()
         }
         .modelContainer(sharedModelContainer)
     }

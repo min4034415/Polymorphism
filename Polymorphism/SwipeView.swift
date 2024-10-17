@@ -14,44 +14,51 @@ struct SwipeView: View {
     @Environment(\.dismiss) var dismiss
     @Query private var subjects: [Subject]
     @State private var index: Int = 0
-    //    @State private var subject = subjects[index]
     @State private var subject: Subject?
     @State private var color = Color.red
     
     var body: some View {
-        //            Color(color)
         ZStack {
             Color(color)
             VStack {
-                Button {
-                    // Action to perform when the button is pressed
-                    if subjects.count > 0 {
-                        index = (index + 1) % subjects.count
-                        subject = subjects[index]
-                        color = subject!.hexColor
-                    }
-                } label: {
-                    Text("Next Subject") // Button label
-                }
-                
                 Text("\(subjects.count)")
-                if subjects.count > 1 {
-                    Text(subjects[index].name) // Access the name of the second subject
+                
+                if subjects.count > 0 {
+                    Text(subjects[index].name) // Display the current subject's name
+                        .font(.largeTitle)
+                        .padding()
                 } else {
-                    Text("No second subject available") // Handle case when there's no second subject
+                    Text("No subjects available")
                 }
             }
-        }.background(color)
+        }
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    // Determine swipe direction based on drag amount
+                    if value.translation.width < 0 {
+                        // Swipe left, move to the next subject
+                        index = (index + 1) % subjects.count
+                    } else if value.translation.width > 0 {
+                        // Swipe right, move to the previous subject
+                        index = (index - 1 + subjects.count) % subjects.count
+                    }
+                    
+                    // Update the subject and color
+                    if subjects.count > 0 {
+                        subject = subjects[index]
+                        color = subject?.hexColor ?? Color.red
+                    }
+                }
+        )
+        .background(color) // Background color based on the subject
+        .animation(.easeInOut, value: index) // Smooth animation when swiping
     }
 }
-//        .foreground(.red)
-//        .foreground(.red)
-        
 
 #Preview {
     let preview = Preview(Subject.self)
     let subjects = Subject.sampleSubjects
-//    let genres = Genre.sampleGenres
     
     preview.addExamples(subjects)
     return SwipeView()
