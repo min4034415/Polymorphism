@@ -30,9 +30,9 @@ struct PolymorphismApp: App {
 //            ContentView()
 //            OptionalView()
 //            NewSubjectView()
-//                SubjectListView()
+                SubjectListView()
 //                    .modelContainer(for: [Subject.self])
-            SwipeView()
+//            SwipeView()
         }
         .modelContainer(sharedModelContainer)
     }
