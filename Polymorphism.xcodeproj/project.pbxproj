@@ -16,6 +16,8 @@
 		D672352D2C9032A4007363A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D672352C2C9032A4007363A5 /* Preview Assets.xcassets */; };
 		D67235702C9086B5007363A5 /* YounHaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D672356F2C9086B5007363A5 /* YounHaView.swift */; };
 		D67235722C908711007363A5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67235712C908711007363A5 /* Location.swift */; };
+		D699DBE32CC0EA5700D938B3 /* EmptyCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D699DBE12CC0EA5700D938B3 /* EmptyCircleView.swift */; };
+		D699DBE42CC0EA5700D938B3 /* PieStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D699DBE22CC0EA5700D938B3 /* PieStructure.swift */; };
 		D69ACB9B2CBFCAE70025DD41 /* EditSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69ACB9A2CBFCAE70025DD41 /* EditSubjectView.swift */; };
 		D6ABE7F92CBC1A6D0080307F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE7F82CBC1A6D0080307F /* MapView.swift */; };
 		D6ABE8042CBD180C0080307F /* RogueOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE8032CBD180C0080307F /* RogueOne.swift */; };
@@ -42,6 +44,8 @@
 		D672352C2C9032A4007363A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D672356F2C9086B5007363A5 /* YounHaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YounHaView.swift; sourceTree = "<group>"; };
 		D67235712C908711007363A5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D699DBE12CC0EA5700D938B3 /* EmptyCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCircleView.swift; sourceTree = "<group>"; };
+		D699DBE22CC0EA5700D938B3 /* PieStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieStructure.swift; sourceTree = "<group>"; };
 		D69ACB9A2CBFCAE70025DD41 /* EditSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSubjectView.swift; sourceTree = "<group>"; };
 		D6ABE7F82CBC1A6D0080307F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D6ABE8032CBD180C0080307F /* RogueOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogueOne.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				D6ABE8172CBF757C0080307F /* TimerDoneView.swift */,
 				D602D6142CC0A75800B6E3AB /* SwipeView.swift */,
 				D67235252C9032A3007363A5 /* ContentView.swift */,
+				D699DBE52CC0EA6C00D938B3 /* ImportedBabies */,
 				D672356F2C9086B5007363A5 /* YounHaView.swift */,
 				D6ABE7F82CBC1A6D0080307F /* MapView.swift */,
 				D6ABE8152CBF64450080307F /* NewSubjectView.swift */,
@@ -113,6 +118,15 @@
 				D6ABE8112CBEBD680080307F /* SubjectSamples.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D699DBE52CC0EA6C00D938B3 /* ImportedBabies */ = {
+			isa = PBXGroup;
+			children = (
+				D699DBE12CC0EA5700D938B3 /* EmptyCircleView.swift */,
+				D699DBE22CC0EA5700D938B3 /* PieStructure.swift */,
+			);
+			path = ImportedBabies;
 			sourceTree = "<group>";
 		};
 		D6ABE80C2CBEA2ED0080307F /* Extensions */ = {
@@ -208,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6ABE8122CBEBD680080307F /* SubjectSamples.swift in Sources */,
+				D699DBE32CC0EA5700D938B3 /* EmptyCircleView.swift in Sources */,
 				D6ABE8162CBF64450080307F /* NewSubjectView.swift in Sources */,
 				D63BF77A2CAB7C5600253205 /* Rogue.swift in Sources */,
 				D6ABE8042CBD180C0080307F /* RogueOne.swift in Sources */,
@@ -216,6 +231,7 @@
 				D6E01E392CA138650067EB90 /* Log.swift in Sources */,
 				D67235282C9032A3007363A5 /* Item.swift in Sources */,
 				D67235722C908711007363A5 /* Location.swift in Sources */,
+				D699DBE42CC0EA5700D938B3 /* PieStructure.swift in Sources */,
 				D6ABE8142CBEBEBE0080307F /* SubjectListView.swift in Sources */,
 				D69ACB9B2CBFCAE70025DD41 /* EditSubjectView.swift in Sources */,
 				D67235702C9086B5007363A5 /* YounHaView.swift in Sources */,
