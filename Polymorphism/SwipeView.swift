@@ -15,20 +15,23 @@ struct SwipeView: View {
     @Query private var subjects: [Subject]
     @State private var index: Int = 0
     @State private var subject: Subject? = nil
-    @State private var color = Color.white
+    @State private var color = Color.red
     
     var body: some View {
         ZStack {
             Color(color)
             VStack {
-//                Text("\(subjects.count)")
+                Text("\(subjects.count)")
+                    .foregroundColor(color.contrastingTextColor()) // Use contrasting text color
                 
                 if let subject = subject {
-                    Text(subject.name) // Display the current subject's name
+                    Text(subject.name)
                         .font(.largeTitle)
                         .padding()
+                        .foregroundColor(color.contrastingTextColor()) // Use contrasting text color
                 } else {
-                    Text("Subject Not Set Yet")
+                    Text("No subjects available")
+                        .foregroundColor(color.contrastingTextColor()) // Use contrasting text color
                 }
             }
         }
@@ -47,7 +50,7 @@ struct SwipeView: View {
                         
                         // Update the subject and color
                         subject = subjects[index]
-                        color = subject?.hexColor ?? Color.white
+                        color = subject?.hexColor ?? Color.red
                     }
                 }
         )
