@@ -32,8 +32,11 @@ struct EmptyCircleView: View {
             ZStack {
                 // Background white circle
                 Circle()
+                    .stroke(.black, lineWidth: 6)
                     .fill(Color.white)
-                    .frame(width: 200, height: 200)
+//                    .frame(width: 200, height: 200)
+                                    .frame(width: 230, height: 230)
+                                    
                 //                    .gesture(
                 //                        DragGesture()
                 //                            .onChanged { value in
@@ -55,6 +58,7 @@ struct EmptyCircleView: View {
                     endAngle: .degrees(-90 - (Double(timeRemaining) / Double(initialTime)) * 360),
                     clockwise: true)  // Now the pie will shrink clockwise
                 .fill(Color.red)
+                .stroke(.black, lineWidth: 4)
                 .frame(width: 200, height: 200)
                 .gesture(timeAdjustmentGesture)
                 .animation(.easeInOut, value: timeRemaining)

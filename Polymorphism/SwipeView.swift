@@ -22,6 +22,7 @@ struct SwipeView: View {
             Color(color)
             VStack {
 //                Text("\(subjects.count)")
+                EmptyCircleView()
                 
                 if let subject = subject {
                     Text(subject.name) // Display the current subject's name
