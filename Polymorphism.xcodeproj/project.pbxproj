@@ -96,9 +96,9 @@
 				D6ABE7F82CBC1A6D0080307F /* MapView.swift */,
 				D6ABE8152CBF64450080307F /* NewSubjectView.swift */,
 				D6ABE8132CBEBEBE0080307F /* SubjectListView.swift */,
+				D6ABE8072CBD4E850080307F /* OptionalView.swift */,
 				D6ABE81A2CBF75C90080307F /* Models */,
 				D6ABE80C2CBEA2ED0080307F /* Extensions */,
-				D6ABE8072CBD4E850080307F /* OptionalView.swift */,
 				D67235292C9032A4007363A5 /* Assets.xcassets */,
 				D672352B2C9032A4007363A5 /* Preview Content */,
 			);
