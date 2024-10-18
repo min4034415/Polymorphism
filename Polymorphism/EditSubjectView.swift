@@ -16,6 +16,7 @@ struct EditSubjectView: View {
     @State private var name = ""
     @State private var color = Color.red
     @State private var dailyGoal = 0
+    @State private var showAlert = false
 //    @State private var rogueOnes: [RogueOne] = nil
     
     var body: some View {
@@ -32,12 +33,24 @@ struct EditSubjectView: View {
                         .frame(height: 150)
                 ColorPicker("Set the subject color", selection: $color, supportsOpacity: false)
                 if changed {
-                    Button("Update") {
-                        subject.name = name
-                        subject.color = color.toHexString()!
-                        subject.dailyGoal = dailyGoal
-                        dismiss()
-                    }
+                    Button("Create") {
+                                     // Trim whitespaces from the name
+                                     let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
+                                     
+                                     // Check if the trimmed name is empty
+                                     if trimmedName.isEmpty {
+                                         showAlert = true // Show an alert if the input is invalid
+                                     } else {
+                                         let newSubject = Subject(name: trimmedName, color: color.toHexString()!, dailyGoal: dailyGoal)
+                                         context.insert(newSubject)
+                                         dismiss()
+                                     }
+                                 }
+                                 .alert(isPresented: $showAlert) {
+                                     Alert(title: Text("Invalid Input"),
+                                           message: Text("Subject name cannot be empty or contain only spaces."),
+                                           dismissButton: .default(Text("OK")))
+                                 }
                 }
             }
             .background(color)
