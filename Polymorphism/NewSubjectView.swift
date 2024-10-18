@@ -30,23 +30,11 @@ struct NewSubjectView: View {
                         .frame(height: 150)
                 ColorPicker("Set the subject color", selection: $color, supportsOpacity: false)
                 Button("Create") {
-                                 // Trim whitespaces from the name
-                                 let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
-                                 
-                                 // Check if the trimmed name is empty
-                                 if trimmedName.isEmpty {
-                                     showAlert = true // Show an alert if the input is invalid
-                                 } else {
-                                     let newSubject = Subject(name: trimmedName, color: color.toHexString()!, dailyGoal: dailyGoal)
-                                     context.insert(newSubject)
-                                     dismiss()
-                                 }
-                             }
-                             .alert(isPresented: $showAlert) {
-                                 Alert(title: Text("Invalid Input"),
-                                       message: Text("Subject name cannot be empty or contain only spaces."),
-                                       dismissButton: .default(Text("OK")))
-                             }
+                                    let newSubject = Subject(name: name.trimmingCharacters(in: .whitespacesAndNewlines), color: color.toHexString()!, dailyGoal: dailyGoal)
+                                    context.insert(newSubject)
+                                    dismiss()
+                                }
+                                .disabled(name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty) // Disable when name is empty
             }
             .background(color)
             .scrollContentBackground(.hidden)

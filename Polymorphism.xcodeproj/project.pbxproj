@@ -19,6 +19,11 @@
 		D699DBE32CC0EA5700D938B3 /* EmptyCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D699DBE12CC0EA5700D938B3 /* EmptyCircleView.swift */; };
 		D699DBE42CC0EA5700D938B3 /* PieStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D699DBE22CC0EA5700D938B3 /* PieStructure.swift */; };
 		D69ACB9B2CBFCAE70025DD41 /* EditSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69ACB9A2CBFCAE70025DD41 /* EditSubjectView.swift */; };
+		D6A4CAF62CC25B2400563DCF /* LocationSavingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4CAF52CC25B2400563DCF /* LocationSavingView.swift */; };
+		D6A4CAF92CC25C3900563DCF /* DataDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4CAF82CC25C3900563DCF /* DataDisplayView.swift */; };
+		D6A4CAFB2CC25C5100563DCF /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4CAFA2CC25C5100563DCF /* DailyView.swift */; };
+		D6A4CAFD2CC25C5B00563DCF /* WeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4CAFC2CC25C5B00563DCF /* WeeklyView.swift */; };
+		D6A4CAFF2CC25C7200563DCF /* LogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4CAFE2CC25C7200563DCF /* LogListView.swift */; };
 		D6ABE7F92CBC1A6D0080307F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE7F82CBC1A6D0080307F /* MapView.swift */; };
 		D6ABE8042CBD180C0080307F /* RogueOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE8032CBD180C0080307F /* RogueOne.swift */; };
 		D6ABE8082CBD4E850080307F /* OptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ABE8072CBD4E850080307F /* OptionalView.swift */; };
@@ -47,6 +52,11 @@
 		D699DBE12CC0EA5700D938B3 /* EmptyCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCircleView.swift; sourceTree = "<group>"; };
 		D699DBE22CC0EA5700D938B3 /* PieStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieStructure.swift; sourceTree = "<group>"; };
 		D69ACB9A2CBFCAE70025DD41 /* EditSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSubjectView.swift; sourceTree = "<group>"; };
+		D6A4CAF52CC25B2400563DCF /* LocationSavingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSavingView.swift; sourceTree = "<group>"; };
+		D6A4CAF82CC25C3900563DCF /* DataDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDisplayView.swift; sourceTree = "<group>"; };
+		D6A4CAFA2CC25C5100563DCF /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
+		D6A4CAFC2CC25C5B00563DCF /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
+		D6A4CAFE2CC25C7200563DCF /* LogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListView.swift; sourceTree = "<group>"; };
 		D6ABE7F82CBC1A6D0080307F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D6ABE8032CBD180C0080307F /* RogueOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogueOne.swift; sourceTree = "<group>"; };
 		D6ABE8072CBD4E850080307F /* OptionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalView.swift; sourceTree = "<group>"; };
@@ -93,7 +103,7 @@
 			children = (
 				D69ACB9A2CBFCAE70025DD41 /* EditSubjectView.swift */,
 				D67235232C9032A3007363A5 /* PolymorphismApp.swift */,
-				D6ABE8172CBF757C0080307F /* TimerDoneView.swift */,
+				D6A4CAF72CC25C0900563DCF /* JustHaventMadeYouYet */,
 				D602D6142CC0A75800B6E3AB /* SwipeView.swift */,
 				D67235252C9032A3007363A5 /* ContentView.swift */,
 				D672356F2C9086B5007363A5 /* YounHaView.swift */,
@@ -127,6 +137,20 @@
 				D699DBE22CC0EA5700D938B3 /* PieStructure.swift */,
 			);
 			path = ImportedBabies;
+			sourceTree = "<group>";
+		};
+		D6A4CAF72CC25C0900563DCF /* JustHaventMadeYouYet */ = {
+			isa = PBXGroup;
+			children = (
+				D6ABE8172CBF757C0080307F /* TimerDoneView.swift */,
+				D6A4CAF82CC25C3900563DCF /* DataDisplayView.swift */,
+				D6A4CAFA2CC25C5100563DCF /* DailyView.swift */,
+				D6A4CAFC2CC25C5B00563DCF /* WeeklyView.swift */,
+				D6A4CAFE2CC25C7200563DCF /* LogListView.swift */,
+				D6A4CAF52CC25B2400563DCF /* LocationSavingView.swift */,
+			);
+			name = JustHaventMadeYouYet;
+			path = "만들어야할것들";
 			sourceTree = "<group>";
 		};
 		D6ABE80C2CBEA2ED0080307F /* Extensions */ = {
@@ -224,6 +248,7 @@
 				D6ABE8122CBEBD680080307F /* SubjectSamples.swift in Sources */,
 				D699DBE32CC0EA5700D938B3 /* EmptyCircleView.swift in Sources */,
 				D6ABE8162CBF64450080307F /* NewSubjectView.swift in Sources */,
+				D6A4CAFD2CC25C5B00563DCF /* WeeklyView.swift in Sources */,
 				D63BF77A2CAB7C5600253205 /* Rogue.swift in Sources */,
 				D6ABE8042CBD180C0080307F /* RogueOne.swift in Sources */,
 				D6ABE8182CBF757C0080307F /* TimerDoneView.swift in Sources */,
@@ -232,14 +257,18 @@
 				D67235282C9032A3007363A5 /* Item.swift in Sources */,
 				D67235722C908711007363A5 /* Location.swift in Sources */,
 				D699DBE42CC0EA5700D938B3 /* PieStructure.swift in Sources */,
+				D6A4CAF92CC25C3900563DCF /* DataDisplayView.swift in Sources */,
 				D6ABE8142CBEBEBE0080307F /* SubjectListView.swift in Sources */,
 				D69ACB9B2CBFCAE70025DD41 /* EditSubjectView.swift in Sources */,
 				D67235702C9086B5007363A5 /* YounHaView.swift in Sources */,
 				D6ABE80D2CBEA2ED0080307F /* Color+Extension.swift in Sources */,
 				D602D6152CC0A75800B6E3AB /* SwipeView.swift in Sources */,
 				D6E01E372CA1385D0067EB90 /* Subject.swift in Sources */,
+				D6A4CAFF2CC25C7200563DCF /* LogListView.swift in Sources */,
+				D6A4CAFB2CC25C5100563DCF /* DailyView.swift in Sources */,
 				D6ABE7F92CBC1A6D0080307F /* MapView.swift in Sources */,
 				D6ABE80E2CBEA2ED0080307F /* UIColor+Extension.swift in Sources */,
+				D6A4CAF62CC25B2400563DCF /* LocationSavingView.swift in Sources */,
 				D67235242C9032A3007363A5 /* PolymorphismApp.swift in Sources */,
 				D6ABE8102CBEBD400080307F /* PreviewContainer.swift in Sources */,
 				D6ABE8082CBD4E850080307F /* OptionalView.swift in Sources */,
